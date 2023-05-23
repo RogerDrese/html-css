@@ -46,7 +46,6 @@ section {
     padding-left: 20px;
     font-family: var(--fonte3);
     font-size: 3vw;
-    max
 }
 section > p {
     padding-bottom: 3em;
@@ -64,7 +63,7 @@ section.imagen{
 }
 section#img01 {
     background-image: url('../desafio12/imagens/background001.jpg');
-    background-position: right center;;
+    background-position: right center;
 }
 section#img02 {
     background-image: url('../desafio12/imagens/background002.jpg');
