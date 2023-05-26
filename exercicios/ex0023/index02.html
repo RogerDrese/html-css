@@ -13,6 +13,12 @@
             width: 500cap;
             border-collapse: collapse;
         }
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: gray;
+        }
         td, th {
             border:  1px solid black;
             padding: 10px;
@@ -20,6 +26,14 @@
         thead, tfoot {
             background-color: gray;
             color: bisque;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:rgb(0, 0, 0) ;
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: gray;
         }
         td.num {
             text-align: right;
@@ -29,10 +43,11 @@
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -147,10 +162,22 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt, nostrum cupiditate necessitatibus dolorum quos ducimus sapiente molestiae quia iste quod. Minima eius, itaque officiis accusamus non a ratione? Eum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum iure, animi error id adipisci illum harum facilis reprehenderit? Minima quo voluptatibus tempore sunt accusamus, repellendus cupiditate! Facilis veniam ex aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere similique soluta fugiat eum, tempora harum at accusantium obcaecati impedit vitae totam minima repudiandae cumque. Modi consectetur vero aspernatur commodi.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt, nostrum cupiditate necessitatibus dolorum quos ducimus sapiente molestiae quia iste quod. Minima eius, itaque officiis accusamus non a ratione? Eum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum iure, animi error id adipisci illum harum facilis reprehenderit? Minima quo voluptatibus tempore sunt accusamus, repellendus cupiditate! Facilis veniam ex aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere similique soluta fugiat eum, tempora harum at accusantium obcaecati impedit vitae totam minima repudiandae cumque. Modi consectetur vero aspernatur commodi.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt, nostrum cupiditate necessitatibus dolorum quos ducimus sapiente molestiae quia iste quod. Minima eius, itaque officiis accusamus non a ratione? Eum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum iure, animi error id adipisci illum harum facilis reprehenderit? Minima quo voluptatibus tempore sunt accusamus, repellendus cupiditate! Facilis veniam ex aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere similique soluta fugiat eum, tempora harum at accusantium obcaecati impedit vitae totam minima repudiandae cumque. Modi consectetur vero aspernatur commodi.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt, nostrum cupiditate necessitatibus dolorum quos ducimus sapiente molestiae quia iste quod. Minima eius, itaque officiis accusamus non a ratione? Eum.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum iure, animi error id adipisci illum harum facilis reprehenderit? Minima quo voluptatibus tempore sunt accusamus, repellendus cupiditate! Facilis veniam ex aliquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus facere similique soluta fugiat eum, tempora harum at accusantium obcaecati impedit vitae totam minima repudiandae cumque. Modi consectetur vero aspernatur commodi.</p>
 </body>
 </html>
