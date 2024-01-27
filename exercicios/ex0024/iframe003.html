@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escolha seu Iframe</title>
+    <style>
+        iframe {
+            size: 1000px 1000px;
+            border: 1000px 1000px;
+        }
+    
+    </style>
 </head>
 <body>
     <h1>Faça sua escolha!</h1>
@@ -14,9 +21,10 @@
         <li><a href="paginas-extras/pag002.html" target="iframe">Segunda escolha.</a> </li>
         <li><a href="paginas-extras/pag003.html" target="iframe">Terceira escolha.</a></li>
     </p>
+    
 
-    <iframe name="iframe"
-    src="" ></iframe>
+    <iframe id="tela" name="iframe"
+    srcdoc="<img src='imagens/1.jpg'>" ></iframe>
 
 
 
