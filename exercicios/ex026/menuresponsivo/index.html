@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, deserunt. Ab ut eius autem nemo delectus harum, repellendus possimus doloribus ratione, corporis explicabo, sapiente animi in aut minus temporibus. Nisi?</p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit pariatur cupiditate officiis, maxime odit numquam velit repellat saepe iure quis inventore debitis ex consectetur magnam soluta quos, nobis laudantium eveniet!
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ab necessitatibus perspiciatis nisi natus, magnam incidunt quae cupiditate, quia fugit, velit itaque voluptas obcaecati illum ullam sint! Temporibus, amet ab!
+            </p>
+        </article>
+    </main>
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+
+
+</body>
+</html>
